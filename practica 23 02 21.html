@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu con CSS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <style id="opsMenu">
+        body {
+            background-color: black;
+            animation-name: fondo;
+            animation-duration: 4s;
+            animation-delay: -1s;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes fondo {
+            0% {
+                top: 0px;
+                left: 0px;
+                background: rgb(0, 98, 122);
+            }
+            25% {
+                top: 0px;
+                left: 100px;
+                background: rgb(3, 48, 85);
+            }
+            50% {
+                top: 100px;
+                left: 100px;
+                background: rgb(7, 17, 109);
+            }
+            75% {
+                top: 100px;
+                left: 0px;
+                background: rgb(3, 48, 85);
+            }
+            100% {
+                top: 0px;
+                left: 0px;
+                background: rgb(0, 98, 122);
+            }
+        }
+        
+        #contenido {
+            background-color: white;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+        
+        #nombs #nomb {
+            font-size: 0.75cm;
+            display: inline;
+            color: rgb(160, 7, 7);
+        }
+        
+        #nombs #nomr {
+            font-size: 0.60cm;
+            display: inline;
+            color: rgb(0, 47, 255);
+        }
+        
+        #curs #curso {
+            font-size: 0.75cm;
+            display: inline;
+            color: rgb(160, 7, 7);
+        }
+        
+        #curs #cursor {
+            font-size: 0.60cm;
+            display: inline;
+            color: rgb(0, 47, 255);
+        }
+        
+        #menu {
+            background-color: #741717;
+        }
+        
+        #menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        #menu ul li {
+            display: inline-block;
+        }
+        
+        #menu ul li a {
+            text-decoration: none;
+            display: flex;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+            padding: 8px;
+        }
+        
+        #menu ul li a:hover {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            background-color: rgb(209, 7, 7);
+        }
+        
+        #tit {
+            font-size: 0.75cm;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contenido">
+        <div id="nombs">
+            <h1 id="nomb">Nombre:</h1>
+            <h1 id="nomr">Justin Padrón</h1>
+        </div>
+        <div id="curs">
+            <h1 id="curso">Curso:</h1>
+            <h1 id="cursor">Segundo técnico "A"</h1>
+        </div>
+        <br>
+        <div>
+            <h1 id="tit">Menú con CSS y HTML usando FLEX</h1>
+        </div>
+        <br>
+        <div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Informes</a></li>
+                    <li><a href="#">Personalización</a></li>
+                    <li><a href="#">Administrador</a></li>
+                    <li><a href="#">Comentarios</a></li>
+                    <li><a href="#">Perfil</a></li>
+                    <li><a href="#">ayuda</a></li>
+                </ul>
+            </nav>
+            <br>
+        </div>
+    </div>
+
+</body>
+
+</html>
